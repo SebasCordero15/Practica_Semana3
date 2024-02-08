@@ -2,22 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prácticaPolimorfismo;
+package prácticaherencia;
 
 /**
  *
  * @author Diego
  */
-public class Reptil extends Vertebrado{
+public class Pez extends Vertebrado{
     private String dieta;
     private String especie;
 
-    public Reptil() {
+    public Pez() {
         this.dieta = "";
         this.especie = "";
     }
 
-    public Reptil(int edad, String nombre, String claseV, String dieta, String especie) {
+    public Pez(int edad, String nombre, String claseV, String dieta, String especie) {
         super(edad, nombre, claseV);
         this.dieta = dieta;
         this.especie = especie;
