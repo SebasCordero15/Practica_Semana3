@@ -2,23 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prácticaherencia;
+package prácticaPolimorfismo;
 
 /**
  *
  * @author Diego
  */
-public class Artropodo extends Invertebrado{
+public class Anfibio extends Vertebrado{
     private String dieta;
     private String especie;
 
-    public Artropodo() {
-        this.dieta = " ";
-        this.especie = " ";
+    public Anfibio() {
+        this.dieta = "";
+        this.especie = "";
     }
 
-    public Artropodo(int edad, String nombre, String claseIV, String dieta, String especie) {
-        super(edad, nombre, claseIV);
+    public Anfibio(int edad, String nombre, String claseV, String dieta, String especie) {
+        super(edad, nombre, claseV);
         this.dieta = dieta;
         this.especie = especie;
     }
@@ -40,9 +40,12 @@ public class Artropodo extends Invertebrado{
     }
     
     @Override
-     public String toString(){
+    public String toString(){
         return super.toString()
                 +"\nEspecie: "+this.getEspecie()
                 +"\nDieta: "+this.getDieta();
     }
-}
+    
+    
+        
+ }

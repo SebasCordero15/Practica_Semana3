@@ -2,22 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package prácticaherencia;
+package prácticaPolimorfismo;
 
 /**
  *
  * @author Diego
  */
-public class Molusco extends Invertebrado{
+public class Artropodo extends Invertebrado{
     private String dieta;
     private String especie;
 
-    public Molusco() {
+    public Artropodo() {
         this.dieta = " ";
         this.especie = " ";
     }
 
-    public Molusco(int edad, String nombre, String claseIV, String dieta, String especie) {
+    public Artropodo(int edad, String nombre, String claseIV, String dieta, String especie) {
         super(edad, nombre, claseIV);
         this.dieta = dieta;
         this.especie = especie;
